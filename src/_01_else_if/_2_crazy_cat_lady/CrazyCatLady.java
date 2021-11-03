@@ -15,10 +15,18 @@ public class CrazyCatLady {
 		//    Hint: You can use the && operator 
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
 		String Q = JOptionPane.showInputDialog(null, "How many cats do you have?");
-		parseInt(Q);
-				             
+
+		int Qint = Integer.parseInt(Q);
 		
-		
+		if (Qint >= 3) {
+			System.out.println("You are the crazy cat lady!");
+		}
+		else if (Qint > 0 && Qint < 3) {
+			playVideo("https://www.youtube.com/watch?v=QtC3Bo9B0yI&ab_channel=Rufus");
+		}
+		else {
+			playVideo("https://www.youtube.com/watch?v=sxAlWUSkACs");
+		}
 	}                
 
 	static void playVideo(String videoURL) {
