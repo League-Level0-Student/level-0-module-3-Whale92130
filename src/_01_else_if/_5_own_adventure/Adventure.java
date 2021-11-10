@@ -12,7 +12,7 @@ public class Adventure {
 		String right1 = "hi";
 		String act1 = "hi";
 
-		JOptionPane.showMessageDialog(null, "Welcome to the land of TacoCat. You are in a fantacy land in the middle of the forest. Key = [ ] means type to do that action");
+		JOptionPane.showMessageDialog(null, "Welcome to the land of TacoCat. You are in a fantasy land in the middle of the forest. Key = [ ] means type to do that action");
 		String Start = JOptionPane.showInputDialog(null, "Would you like to go [left] or [right]?");
 		if (Start.equals("left")) {
 			left1 = JOptionPane.showInputDialog(null, "You start walking along and you see a dragon asleep in a cave. Would you like to [attack] or [keep walking]?");
@@ -41,7 +41,7 @@ public class Adventure {
 		}
 			if (left1.equals("keep walking")) {
 				JOptionPane.showMessageDialog(null, "You fall in a pit of lava. If you can guess my number in 3 tries I will let you rule the world and escape the lava.");
-				int random = new Random().nextInt(99+1);
+				int random = new Random().nextInt(9+1);
 					for (int count = 0; count < 3; count++) {
 				String Q = JOptionPane.showInputDialog(null, "Guess a number?");
 					int Qint = Integer.parseInt(Q);
@@ -66,7 +66,7 @@ public class Adventure {
 			
 			if (right1.equals("keep walking")) {
 				JOptionPane.showMessageDialog(null, "You fall in a pit of lava. If you can guess my number in 3 tries I will let you rule the world amd escape the lava.");
-				int random = new Random().nextInt(99+1);
+				int random = new Random().nextInt(9+1);
 					for (int count = 0; count < 3; count++) {
 				String Q = JOptionPane.showInputDialog(null, "Guess a number?");
 					int Qint = Integer.parseInt(Q);
